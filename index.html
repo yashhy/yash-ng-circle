@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <head>
+        <title>yash-ng-circle</title>
+        <style type="text/css">
+            body {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body ng-app="app" ng-controller="YashCircleDemoCtrl">
+        Circle Value 1: <input type="number" ng-model="circleValue1" step="10" min="0" max="100">
+
+        <yash-ng-circle 
+                c-radius="300" 
+                c-value="circleValue1" 
+                c-max="100"
+                c-fill-n-text-color="rgb(58,181,74)"
+                c-background-color="rgb(157,157,157)">
+        </yash-ng-circle>
+        <br>
+
+        Circle Value 2: <input type="number" ng-model="circleValue2" step="5" min="0" max="50">
+        <yash-ng-circle 
+                c-radius="220" 
+                c-value="circleValue2" 
+                c-max="50"
+                c-fill-n-text-color="orange"
+                c-background-color="brown">
+        </yash-ng-circle>
+
+        <script src="./scripts/angular.min.js"></script>
+        <script src="./scripts/raphael.js"></script>
+        <script src="./yash-ng-circle.js"></script>
+        <script src="./app.js"></script>
+    </body>
+</html>
