@@ -2,7 +2,7 @@
 
 ## Usage
 
-Just inclue yash-ng-circle.js in your script :)
+Just inclue src/yash-ng-circle.js in your script :)
 
 ```html
 <yash-ng-circle 
