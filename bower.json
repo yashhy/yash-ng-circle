@@ -1,0 +1,12 @@
+{
+  "name": "angular-raphael-circle",
+  "description": "Angular circular progress built with RaphaelJS",
+  "version": "1.0.0",
+  "authors": [
+    "Yashwanth Hari Krishnan"
+  ],
+  "devDependencies": {
+    "angular": "^1.5.5",
+    "raphael": "^2.2.0"
+  }
+}
