@@ -80,6 +80,7 @@
             })();
 
             scope.$watch('value', function (newVal) {
+                newVal = newVal ? newVal : 0;
                 if (newVal >= 0 && newVal <= max) {
                     updateVal(newVal, max, circleRadius, sec, 0);
                 }
