@@ -1,15 +1,16 @@
 (function (angular, Raphael) {
+'use strict';
 
     if (!angular) {
-        console.error('Yash-ng-circle Requires AngularJS', 'https://angularjs.org/');
+        window.console.error('yash-circle Requires AngularJS', 'https://angularjs.org/');
         return;
     }
     if (!Raphael) {
-        console.error('Yash-ng-circle Requires RaphaelJS', 'https://github.com/DmitryBaranovskiy/raphael');
+        window.console.error('yash-circle Requires RaphaelJS', 'https://github.com/DmitryBaranovskiy/raphael');
         return;
     }
 
-    angular.module('yash-ng-circle', []).directive('yashNgCircle', function() {
+    angular.module('yash-circle', []).directive('yashCircle', function (){
         return {
             restrict: 'E',
             scope: {
@@ -35,7 +36,7 @@
                 arcAndTextColor = scope.arcAndTextColor,
                 circleBaseStroke = scope.circleBackgroundColor;
 
-            var raphael = Raphael(element.children('')[0], widthHeight, widthHeight),
+            var raphael = new Raphael(element.children('')[0], widthHeight, widthHeight),
                 param = {'stroke': '#fff', 'stroke-width': strokeWidth};
 
             // Custom Attribute
@@ -60,7 +61,7 @@
                       });
 
             var circle = raphael.circle(position, position, circleRadius);
-            circle.attr({ 'stroke-width': strokeWidth, 
+            circle.attr({ 'stroke-width': strokeWidth,
                           'stroke': circleBaseStroke
                        });
 

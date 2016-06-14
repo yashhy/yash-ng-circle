@@ -1,0 +1,29 @@
+{
+  "name": "yash-circle",
+  "version": "1.0.0",
+  "description": "Angular circular progress built with RaphaelJS",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashhy/yash-ng-circle.git"
+  },
+  "keywords": [
+    "AngularJS",
+    "Circle",
+    "Raphael"
+  ],
+  "author": "Yashwanth Hari Krishnan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yashhy/yash-ng-circle/issues"
+  },
+  "homepage": "https://github.com/yashhy/yash-ng-circle#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^0.5.1"
+  }
+}
