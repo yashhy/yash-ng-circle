@@ -1,7 +1,7 @@
 # yash-circle : A simple Angular progress circle built with [RaphelJS](https://github.com/DmitryBaranovskiy/raphael)
 
 ## Usage
-Just include src/yash-circle.js in your script.
+Just include src/yash-circle.js in your script
 
 ```html
 <yash-circle
