@@ -2,7 +2,7 @@
 'use strict';
 
     if (!angular) {
-        window.console.error('yash-circle Requires AngularJS', 'https://angularjs.org/');
+        window.console.error('yash-circle Requires AngularJS :)', 'https://angularjs.org/');
         return;
     }
     if (!Raphael) {
