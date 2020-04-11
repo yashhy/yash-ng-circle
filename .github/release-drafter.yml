@@ -14,12 +14,9 @@ categories:
       - 'bug'
   - title: '🧰 Maintenance'
     label: 'chore'
-change-template: '- $TITLE (#$NUMBER)'
+change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
 replacers:
   - search: '/(GOOGLE-(\d+))/g'
     replace: 'https://www.google.com/?q=$1'
 template: |
   $CHANGES
-
-  Contributors 🎩:
-  $CONTRIBUTORS
